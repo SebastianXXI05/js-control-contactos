@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de control Contactos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container header__items">
+      <h1>Gestión de Contactos</h1>
+    </div>
+  </header>
+
+  <main class="container main__container">
+    <div class="control">
+      <form action="#" id="form">
+        <label for="name">Nombre</label><input required type="text" id="name"><br>
+        <label for="tel">Telefono</label><input required type="text" id="tel"><br>
+        <button type="submit">Agregar</button>
+      </form>
+      <input type="text" id="delete" placeholder="Ingresa el ID para eliminar">
+      <button id="btn-delete">Eliminar</button>
+    </div>
+  
+    <div class="result">
+      <h2>Contactos</h2>
+      <div id="resulted"></div>
+    </div>
+  </main>
+</body>
+</html>

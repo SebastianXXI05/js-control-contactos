@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: azure;
+  font-size: 16px;
+  font-family: monospace, sans-serif;
+  height: 100vh;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 4em;
+  margin-bottom: 2em;
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main__container {
+  display: flex;
+  min-height: 100%;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  padding: 1em;
+  margin: 0 2em 2em;
+  width: 400px;
+  min-height: 300px;
+  max-height: 410px;
+}
+
+.control input {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  background-color: rgba(253, 253, 253, 0.87);
+}
+
+.control button {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-size: 1.2em;
+  background-color: rgb(31, 122, 54);
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.control button[id] {
+  background-color: red;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+}
+
+#form label {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.result {
+  background-color: rgb(7, 153, 153);
+  width: calc(90% - 400px);
+  min-height: 100%;
+  padding: 1em;
+}
+
+.result h2 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.result p {
+  color:  white;
+  margin: 1.5em 0;
+  font-size: 1.1em;
+}
+
+@media (max-width: 1072px) {
+  .main__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .control {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .result {
+    width: 100%;
+    min-height: 350px;
+    margin-bottom: 2em;
+  }
+}
